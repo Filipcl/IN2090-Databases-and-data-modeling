@@ -1,6 +1,5 @@
 -- Obligatorisk Oppgave 2 
 -- Filipcl
-
 -- Oppgave 2: 
 
 -- 2A --
@@ -45,12 +44,10 @@ inner join Varighet
 on t.timelistenr = Varighet.timelistenr 
 where t.status = 'utbetalt';
 
-/*
 -- Oppgave 4: 
-
--- Grunnen til at spørringene er forskjellige er fordi Inner join spørringen slår sammen de to tabellene hvor timelistenr er ekvivalente, 
-og natural joinen slår sammen der kolonnene med identiske navn har identisk innhold. 
+-- Grunnen til at spørringene er forskjellige er fordi Inner join spørringen slår sammen de to tabellene hvor timelistenr er ekvivalente. 
+Natural joinen slår sammen der kolonnene med identiske navn har identisk innhold. 
 I dette tilfellet er det kun et tilfelle hvor timelisetnr og beskrivelse har identisk innhold i begge tabellene. 
 
 -- Spørringene er ekvivalente fordi, spørringen joiner tabellen timeliste og viewet Varighet på timelistenr. 
-Natural join legger sammen kolonner med samme navn og gir derfor likt svar.
+Natural join legger sammen kolonner med samme navn, derfor gir spørringene likt svar.
